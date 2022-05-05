@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* SELETORES PERSONALIZADOS
+            #     = id
+            .     = class
+            :     = pseudo-class
+            ::    = pseudo-element
+            >     = children
+
+        */
+        
+        body { 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a { 
+            color:red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited { 
+            color:darkred
+        }
+
+        a:hover { 
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active { 
+            color:rgb(96, 119, 235);
+            text-decoration: none;
+        }
+
+        .especial::after {
+            content: '↤';
+            text-decoration: none;
+            color:darkgray;
+            font-weight: normal;            
+        }
+
+        .especial::before {
+            content: '↦';
+        }
+
+        .especial:hover {
+            background-color: cornflowerblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/gabvillela" target="_blank" rel="external">Repositório Github</a></li>
+        <li><a href="https://youtube.com" target="_blank" rel="external" class="especial">Canal Youtube</a></li>
+        <li><a href="https://cursoemvideo.com" target="_blank" rel="external" class="especial">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>

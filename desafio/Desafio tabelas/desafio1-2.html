@@ -4,46 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas</title>
+    <title>Desafio Tabelas 1/2</title>
     <style>
-        body { 
-            font-family: arial;
-        }
-
         table { 
             border-collapse: collapse;
-            width: 300px;
+            width: 150px;
+            margin-top: 50px;
         }
-
+        
         td { 
             border: 1px solid black;
-            padding: 10px;
+            padding: 20px;
             text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>Mesclagem de Cédulas</h1>
     <table>
         <tr>
-            <td colspan="3">A</td>
-            
-            
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
         </tr>
         <tr>
-            <td rowspan="3">D</td>
+            <td rowspan="4">C</td>
+            <td>D</td>
             <td>E</td>
-            <td rowspan="2">F</td>
+            <td>F</td>
         </tr>
         <tr>
-            
+            <td>G</td>
             <td>H</td>
-            
+            <td>I</td>
         </tr>
         <tr>
-            <td colspan="2">M</td>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td colspan="4">N</td>
         </tr>
     </table>
-    
 </body>
 </html>

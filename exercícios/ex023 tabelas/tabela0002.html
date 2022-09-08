@@ -34,6 +34,14 @@
             padding: 10px;
             background-color: lightgray;
         }
+
+        tbody > tr:nth-child(2n-1) { 
+            background: lightgray;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: burlywood;
+        }
         
     </style>
 </head>
@@ -53,8 +61,8 @@
         <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -169,7 +177,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</td>
+                <th scope="row">Total de Habitantes</td>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
